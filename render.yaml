@@ -1,9 +1,0 @@
-# Render.com の Blueprint（GitHubに上げて「New + > Blueprint」で読み込むだけ）
-services:
-  - type: web
-    name: midnight-mansion
-    runtime: node
-    plan: free
-    buildCommand: "echo no build needed"
-    startCommand: "node server.js"
-    healthCheckPath: /healthz
