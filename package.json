@@ -1,0 +1,20 @@
+{
+  "name": "midnight-mansion-online",
+  "version": "1.0.0",
+  "description": "マーダーミステリー（深夜0時の館 / 消えた魔女の遺産）- 部屋コードで遊べるオンライン版（依存パッケージなし）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test-smoke.js && node test-witch.js",
+    "test:ui": "node test-ui.js && node test-ui-witch.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

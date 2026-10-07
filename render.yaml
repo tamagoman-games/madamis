@@ -1,0 +1,9 @@
+# Blueprint for a standalone Node.js service on Render.
+services:
+  - type: web
+    name: mystery-room
+    runtime: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    healthCheckPath: /healthz
